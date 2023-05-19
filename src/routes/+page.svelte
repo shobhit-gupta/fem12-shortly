@@ -8,9 +8,13 @@
 	<title>Shortly URL shortening API Challenge</title>
 </svelte:head>
 
-<div class="bg-cyan-100 flex h-screen items-center justify-center text-5xl font-extralight">
+<header class="fixed z-10 flex w-full items-center justify-between px-6 pt-10">
+	<img src="/images/logo.svg" alt="" />
+</header>
+
+<!-- <div class="bg-cyan-100 flex h-screen items-center justify-center text-5xl font-extralight">
 	Shortly URL Shortening API Challenge
-</div>
+</div> -->
 
 <!-- Pricing -->
 <!-- Resources -->
