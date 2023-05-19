@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [Github Repo](https://github.com/shobhit-gupta/fem11-loopstudios)
-- Live Site URL: [https://fem11-loopstudios.vercel.app](https://fem11-loopstudios.vercel.app) -->
+-   Solution URL: [Github Repo](https://github.com/shobhit-gupta/fem12-shortly)
+-   Live Site URL: [https://fem12-shortly.vercel.app](https://fem12-shortly.vercel.app)
 
 ## My process
 
