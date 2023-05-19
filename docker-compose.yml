@@ -1,0 +1,19 @@
+services:
+  shortly:
+    build: ./
+    stdin_open: true
+    tty: true
+    container_name: shortly-app
+    ports:
+      - '10011:4173'
+      - '11011:5173'
+    volumes:
+      - ./:/app
+      - shortly-nm:/app/node_modules
+volumes:
+  shortly-nm:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./node_modules
