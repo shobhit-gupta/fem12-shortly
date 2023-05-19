@@ -1,8 +1,14 @@
 <svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+		rel="stylesheet"
+	/>
 	<title>Shortly URL shortening API Challenge</title>
 </svelte:head>
 
-<div class="flex h-screen items-center justify-center bg-cyan-100 text-5xl font-extralight">
+<div class="bg-cyan-100 flex h-screen items-center justify-center text-5xl font-extralight">
 	Shortly URL Shortening API Challenge
 </div>
 
