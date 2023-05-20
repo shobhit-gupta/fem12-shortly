@@ -1,3 +1,14 @@
+<script lang="ts">
+	import HamburgerButton from '$lib/UI/HamburgerButton.svelte';
+
+	let isMenuOpen = false;
+
+	const toggleMenu = (event: CustomEvent<boolean>) => {
+		isMenuOpen = event.detail;
+		console.log(isMenuOpen);
+	};
+</script>
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -8,8 +19,24 @@
 	<title>Shortly URL shortening API Challenge</title>
 </svelte:head>
 
-<header class="fixed z-10 flex w-full items-center justify-between px-6 pt-10">
+<header
+	class="
+		fixed
+		z-10
+		flex
+		w-full
+		flex-wrap
+		items-center
+		justify-between
+		px-6
+		pt-10
+		md:flex-nowrap
+	"
+>
 	<img src="/images/logo.svg" alt="" />
+	<div class="flex justify-end md:hidden">
+		<HamburgerButton on:toggleMenu={toggleMenu} />
+	</div>
 </header>
 
 <!-- <div class="bg-cyan-100 flex h-screen items-center justify-center text-5xl font-extralight">
