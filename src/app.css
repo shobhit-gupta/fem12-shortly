@@ -7,3 +7,18 @@
 		@apply font-sans text-lg font-medium;
 	}
 }
+
+@layer components {
+	.btn--primary {
+		@apply rounded-full bg-cyan px-6 py-2.5 text-center font-bold text-white md:py-2;
+	}
+}
+
+@layer utilities {
+	.center-x {
+		@apply left-1/2 -translate-x-1/2;
+	}
+	.center-y {
+		@apply top-1/2 -translate-y-1/2;
+	}
+}

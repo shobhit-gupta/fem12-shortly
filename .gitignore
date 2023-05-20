@@ -13,3 +13,5 @@ vite.config.ts.timestamp-*
 *.fig
 *.xd
 .prettierignore
+
+/.vercel
