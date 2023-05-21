@@ -59,8 +59,10 @@
 				flex
 				flex-col
 				gap-9
+				bg-green-400
 				px-6
-				py-24
+				pb-40
+				pt-24
 				md:flex-row-reverse
 				md:py-40
 				lg:gap-24
@@ -123,10 +125,12 @@
 				<a href="/" class="btn-primary--lg mt-8 md:mt-9">Get Started</a>
 			</div>
 		</section>
+
+		<div class="h-96 bg-black">
+			<div class="mx-6 h-40 -translate-y-1/2 bg-violet-800" />
+		</div>
 	</div>
 </div>
-
-<!-- Get Started -->
 
 <!-- Shorten a link here... -->
 
