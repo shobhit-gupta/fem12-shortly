@@ -52,8 +52,6 @@
 			<Navbar {isMenuOpen} />
 		</header>
 
-		<div class="pt-24 md:pt-40" />
-
 		<section
 			id="hero"
 			class="
@@ -62,7 +60,9 @@
 				flex-col
 				gap-9
 				px-6
+				py-24
 				md:flex-row-reverse
+				md:py-40
 				lg:gap-24
 			"
 		>
