@@ -9,8 +9,17 @@
 }
 
 @layer components {
-	.btn--primary {
-		@apply rounded-full bg-cyan px-6 py-2.5 text-center font-bold text-white md:py-2;
+	.btn-primary {
+		@apply rounded-full bg-cyan text-center font-bold text-white;
+	}
+	.btn-primary--sm {
+		@apply btn-primary px-6 pb-2 pt-[9px] text-[15px];
+	}
+	.btn-primary--md {
+		@apply btn-primary px-6 pb-[9px] pt-3 text-lg;
+	}
+	.btn-primary--lg {
+		@apply btn-primary px-10 pb-3 pt-3.5 text-xl;
 	}
 }
 
