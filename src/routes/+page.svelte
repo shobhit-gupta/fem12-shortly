@@ -20,42 +20,111 @@
 	<title>Shortly URL shortening API Challenge</title>
 </svelte:head>
 
-<header
-	class="
-		center-x
-		fixed
-		z-10
-		flex
-		w-full
-		max-w-6xl
-		flex-wrap
-		items-center
-		justify-between
-		gap-6
-		px-6
-		pt-10
-		md:flex-nowrap
-		md:gap-11
-		md:pt-12
-	"
->
-	<img src="/images/logo.svg" alt="" />
-	<div class="flex justify-end md:hidden">
-		<HamburgerButton on:toggleMenu={toggleMenu} />
+<!-- Reference(s):
+	- https://www.modusagency.com/blog/css-tricks-expanding-beyond-a-parent-div/
+-->
+<div class="full-width">
+	<div class="center-content-container">
+		<!-- fix: Specify width again because it is taken out of normal flow of the DOM because of it's fixed position. -->
+		<header
+			class="
+				fixed
+				z-10
+				mx-auto
+				flex
+				w-full
+				max-w-6xl
+				flex-wrap
+				items-center
+				justify-between
+				gap-6
+				px-6
+				pt-10
+				md:flex-nowrap
+				md:gap-11
+				md:pt-12
+		"
+		>
+			<img src="/images/logo.svg" alt="" />
+			<div class="flex justify-end md:hidden">
+				<HamburgerButton on:toggleMenu={toggleMenu} />
+			</div>
+			<Navbar {isMenuOpen} />
+		</header>
+
+		<section
+			id="hero"
+			class="
+				mx-auto
+				flex
+				flex-col
+				gap-9
+				px-6
+				py-24
+				md:flex-row-reverse
+				md:py-40
+				lg:gap-24
+			"
+		>
+			<div class="-mr-[200%] w-[500%]">
+				<img
+					src="/images/illustration-working.svg"
+					alt=""
+					class="
+						h-[337px]
+						sm:h-[380px]
+						md:h-[420px]
+						lg:h-[482px]
+					"
+				/>
+			</div>
+
+			<div
+				class="
+					flex
+					flex-col
+					items-center
+					justify-center
+					text-center
+					md:w-[450px]
+					md:shrink-0
+					md:items-start
+					md:text-left
+					lg:w-[565px]
+				"
+			>
+				<h1
+					class="
+						text-[42px]
+						font-bold
+						leading-[1.14em]
+						tracking-tight
+						text-veryDarkBlue
+						md:text-[56px]
+						lg:text-[80px]
+					"
+				>
+					More than just shorter links
+				</h1>
+				<p
+					class="
+						mt-4
+						leading-relaxed
+						tracking-[0.12px]
+						text-grayishViolet
+						md:mt-1.5
+						md:text-[22px]
+						md:tracking-[0.15px]
+					"
+				>
+					Build your brand’s recognition and get detailed insights on how your links are
+					performing.
+				</p>
+				<a href="/" class="btn-primary--lg mt-8 md:mt-9">Get Started</a>
+			</div>
+		</section>
 	</div>
-	<Navbar {isMenuOpen} />
-</header>
-
-<!-- Pricing -->
-<!-- Resources -->
-
-<!-- Login -->
-<!-- Sign Up -->
-
-<!-- More than just shorter links -->
-
-<!-- Build your brand’s recognition and get detailed insights  -->
-<!-- on how your links are performing. -->
+</div>
 
 <!-- Get Started -->
 

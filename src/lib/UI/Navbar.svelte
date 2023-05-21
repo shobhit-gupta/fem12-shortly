@@ -24,7 +24,7 @@
 	</div>
 	<div class="flex flex-col gap-6 pt-7 md:flex-row md:items-center md:gap-9 md:pt-0">
 		<a href="/">Login</a>
-		<a href="/" class="btn--primary">Sign Up</a>
+		<a href="/" class="btn-primary--md md:btn-primary--sm">Sign Up</a>
 	</div>
 </nav>
 

@@ -4,21 +4,36 @@
 
 @layer base {
 	body {
-		@apply font-sans text-lg font-medium;
+		@apply full-width font-sans text-lg font-medium;
 	}
 }
 
 @layer components {
-	.btn--primary {
-		@apply rounded-full bg-cyan px-6 py-2.5 text-center font-bold text-white md:py-2;
+	.btn-primary {
+		@apply rounded-full bg-cyan text-center font-bold text-white;
+	}
+	.btn-primary--sm {
+		@apply btn-primary px-6 pb-2 pt-[9px] text-[15px];
+	}
+	.btn-primary--md {
+		@apply btn-primary px-6 pb-[9px] pt-3 text-lg;
+	}
+	.btn-primary--lg {
+		@apply btn-primary px-10 pb-3 pt-3.5 text-xl;
 	}
 }
 
 @layer utilities {
-	.center-x {
+	.full-width {
+		@apply w-full overflow-hidden;
+	}
+	.center-content-container {
+		@apply mx-auto w-full max-w-6xl;
+	}
+	/* .center-x {
 		@apply left-1/2 -translate-x-1/2;
 	}
 	.center-y {
 		@apply top-1/2 -translate-y-1/2;
-	}
+	} */
 }
