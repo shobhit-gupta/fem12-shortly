@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply full-width font-sans text-lg font-medium;
+		@apply full-width bg-slate-200 font-sans text-lg font-medium;
 	}
 }
 
@@ -25,7 +25,7 @@
 
 @layer utilities {
 	.full-width {
-		@apply w-full overflow-hidden;
+		@apply w-full overflow-x-hidden;
 	}
 	.center-content-container {
 		@apply mx-auto w-full max-w-6xl;

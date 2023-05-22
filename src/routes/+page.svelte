@@ -6,7 +6,6 @@
 
 	const toggleMenu = (event: CustomEvent<boolean>) => {
 		isMenuOpen = event.detail;
-		console.log(isMenuOpen);
 	};
 </script>
 
@@ -23,7 +22,7 @@
 <!-- Reference(s):
 	- https://www.modusagency.com/blog/css-tricks-expanding-beyond-a-parent-div/
 -->
-<div class="full-width">
+<div class="w-full overflow-x-hidden bg-white">
 	<div class="center-content-container">
 		<!-- fix: Specify width again because it is taken out of normal flow of the DOM because of it's fixed position. -->
 		<header
@@ -59,7 +58,6 @@
 				flex
 				flex-col
 				gap-9
-				bg-green-400
 				px-6
 				pb-40
 				pt-24
@@ -125,10 +123,12 @@
 				<a href="/" class="btn-primary--lg mt-8 md:mt-9">Get Started</a>
 			</div>
 		</section>
+	</div>
+</div>
 
-		<div class="h-96 bg-black">
-			<div class="mx-6 h-40 -translate-y-1/2 bg-violet-800" />
-		</div>
+<div class="h-96 w-full">
+	<div class="center-content-container">
+		<div class="mx-6 h-40 -translate-y-1/2 bg-violet-800" />
 	</div>
 </div>
 
