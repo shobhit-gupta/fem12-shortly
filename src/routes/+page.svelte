@@ -146,7 +146,7 @@
 				md:py-[52px]
 			"
 		>
-			<form class="flex flex-col items-start justify-center gap-4 md:flex-row md:gap-6">
+			<form class="flex flex-col justify-center gap-4 md:flex-row md:items-start md:gap-6">
 				<div class="grow">
 					<input
 						type="url"
@@ -169,6 +169,7 @@
 							md:px-8
 							md:py-3.5
 							md:text-xl
+							md:leading-[36px]
 							md:tracking-[0.15px]
 						"
 						placeholder="Shorten a link here..."
@@ -222,25 +223,112 @@
 	</div>
 </div>
 
-<!-- Advanced Statistics -->
+<div class="full-width">
+	<div class="center-content-container section">
+		<div class="mx-auto max-w-[540px] text-center">
+			<h2 class="section-title text-veryDarkBlue">Advanced Statistics</h2>
+			<p class="mt-4 text-grayishViolet md:mt-[18px]">
+				Track how your links are performing across the web with our advanced statistics
+				dashboard.
+			</p>
+		</div>
+		<div class="relative mt-24">
+			<div class="center-x center-y absolute z-0 h-3/4 w-2 md:h-2 md:w-3/4">
+				<div class="h-full w-full bg-cyan md:-translate-y-[22px]" />
+			</div>
+			<div
+				class="relative z-10 flex flex-col gap-24 md:flex-row md:items-center md:gap-4 lg:gap-8"
+			>
+				<div
+					class="relative rounded-md bg-white px-8 pb-10 pt-[77px] text-center md:self-start md:px-2 lg:px-8"
+				>
+					<h3
+						class="
+							feature-title
+							before:center-x
+							text-veryDarkBlue
+							before:absolute
+							before:top-0
+							before:h-[88px]
+							before:w-[88px]
+							before:-translate-y-1/2
+							before:rounded-full
+							before:bg-darkViolet
+							before:p-6
+							before:content-[url('/images/icon-brand-recognition.svg')]
+							before:md:left-8
+							before:md:translate-x-0
+						"
+					>
+						Brand Recognition
+					</h3>
+					<p class="mt-3 text-[15px] leading-[26px] text-grayishViolet">
+						Boost your brand recognition with each click. Generic links don’t mean a
+						thing. Branded links help instil confidence in your content.
+					</p>
+				</div>
 
-<!-- Track how your links are performing across the web with our  -->
-<!-- advanced statistics dashboard. -->
+				<div
+					class="relative rounded-md bg-white px-8 pb-10 pt-[77px] text-center md:my-12 md:px-2 lg:px-8"
+				>
+					<h3
+						class="
+							feature-title
+							before:center-x
+							text-veryDarkBlue
+							before:absolute
+							before:top-0
+							before:h-[88px]
+							before:w-[88px]
+							before:-translate-y-1/2
+							before:rounded-full
+							before:bg-darkViolet
+							before:p-6
+							before:content-[url('/images/icon-detailed-records.svg')]
+							before:md:left-8
+							before:md:translate-x-0
+						"
+					>
+						Detailed Records
+					</h3>
+					<p class="mt-3 text-[15px] leading-[26px] text-grayishViolet">
+						Gain insights into who is clicking your links. Knowing when and where people
+						engage with your content helps inform better decisions.
+					</p>
+				</div>
 
-<!-- Brand Recognition -->
-
-<!-- Boost your brand recognition with each click. Generic links don’t  -->
-<!-- mean a thing. Branded links help instil confidence in your content. -->
-
-<!-- Detailed Records -->
-
-<!-- Gain insights into who is clicking your links. Knowing when and where  -->
-<!-- people engage with your content helps inform better decisions. -->
-
-<!-- Fully Customizable -->
-
-<!-- Improve brand awareness and content discoverability through customizable  -->
-<!-- links, supercharging audience engagement. -->
+				<div
+					class="relative rounded-md bg-white px-8 pb-10 pt-[77px] text-center md:self-end md:px-2 lg:px-8"
+				>
+					<h3
+						class="
+							feature-title
+							before:center-x
+							text-veryDarkBlue
+							before:absolute
+							before:top-0
+							before:h-[88px]
+							before:w-[88px]
+							before:-translate-y-1/2
+							before:rounded-full
+							before:bg-darkViolet
+							before:p-6
+							before:content-[url('/images/icon-fully-customizable.svg')]
+							before:md:left-8
+							before:md:translate-x-0
+						"
+					>
+						Fully Customizable
+					</h3>
+					<p class="mt-3 text-[15px] leading-[26px] text-grayishViolet">
+						Improve brand awareness and content discoverability through customizable
+						links, supercharging audience engagement.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Boost your links today -->
 
@@ -269,6 +357,15 @@
 	.section {
 		@apply px-6 pb-20 md:pb-32;
 	}
+
+	.section-title {
+		@apply text-[28px] font-bold leading-[48px] md:text-[40px];
+	}
+
+	.feature-title {
+		@apply text-[22px] font-bold leading-normal md:text-xl lg:text-[22px];
+	}
+
 	.link {
 		@apply text-base leading-none tracking-[0.12px] md:text-xl md:leading-[1.8em] md:tracking-[0.15px];
 	}

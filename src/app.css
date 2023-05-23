@@ -4,13 +4,13 @@
 
 @layer base {
 	body {
-		@apply full-width bg-slate-200 font-sans text-lg font-medium;
+		@apply full-width bg-whitesmoke font-sans text-lg font-medium;
 	}
 }
 
 @layer components {
 	.btn-theme {
-		@apply bg-cyan text-center font-bold text-white;
+		@apply min-w-fit bg-cyan text-center font-bold text-white;
 	}
 	.btn-xs {
 		@apply px-6 pb-[7px] pt-[9px] text-base md:text-[15px];
@@ -57,10 +57,10 @@
 	.center-content-container {
 		@apply mx-auto w-full max-w-6xl;
 	}
-	/* .center-x {
+	.center-x {
 		@apply left-1/2 -translate-x-1/2;
 	}
 	.center-y {
 		@apply top-1/2 -translate-y-1/2;
-	} */
+	}
 }
