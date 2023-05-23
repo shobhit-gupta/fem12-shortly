@@ -222,10 +222,17 @@
 	</div>
 </div>
 
-<!-- Advanced Statistics -->
-
-<!-- Track how your links are performing across the web with our  -->
-<!-- advanced statistics dashboard. -->
+<div class="full-width">
+	<div class="center-content-container section">
+		<div class="mx-auto max-w-[540px] text-center">
+			<h2 class="section-title text-veryDarkBlue">Advanced Statistics</h2>
+			<p class="mt-4 text-grayishViolet md:mt-[18px]">
+				Track how your links are performing across the web with our advanced statistics
+				dashboard.
+			</p>
+		</div>
+	</div>
+</div>
 
 <!-- Brand Recognition -->
 
@@ -269,6 +276,11 @@
 	.section {
 		@apply px-6 pb-20 md:pb-32;
 	}
+
+	.section-title {
+		@apply text-[28px] font-bold leading-[48px] md:text-[40px];
+	}
+
 	.link {
 		@apply text-base leading-none tracking-[0.12px] md:text-xl md:leading-[1.8em] md:tracking-[0.15px];
 	}
