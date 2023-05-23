@@ -22,7 +22,7 @@
 <!-- Reference(s):
 	- https://www.modusagency.com/blog/css-tricks-expanding-beyond-a-parent-div/
 -->
-<div class="w-full overflow-x-hidden bg-white">
+<div class="full-width bg-white">
 	<div class="center-content-container">
 		<!-- fix: Specify width again because it is taken out of normal flow of the DOM because of it's fixed position. -->
 		<header
@@ -126,8 +126,8 @@
 	</div>
 </div>
 
-<div class="w-full pb-32">
-	<div class="center-content-container relative px-6">
+<div class="w-full">
+	<div class="center-content-container section relative">
 		<div
 			class="
 				absolute
@@ -266,6 +266,9 @@
 <!-- Contact -->
 
 <style lang="postcss">
+	.section {
+		@apply px-6 pb-20 md:pb-32;
+	}
 	.link {
 		@apply text-base leading-none tracking-[0.12px] md:text-xl md:leading-[1.8em] md:tracking-[0.15px];
 	}
