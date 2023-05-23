@@ -10,7 +10,7 @@
 
 @layer components {
 	.btn-theme {
-		@apply bg-cyan text-center font-bold text-white;
+		@apply min-w-fit bg-cyan text-center font-bold text-white;
 	}
 	.btn-xs {
 		@apply px-6 pb-[7px] pt-[9px] text-base md:text-[15px];
