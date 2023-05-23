@@ -146,7 +146,7 @@
 				md:py-[52px]
 			"
 		>
-			<form class="flex flex-col items-start justify-center gap-4 md:flex-row md:gap-6">
+			<form class="flex flex-col justify-center gap-4 md:flex-row md:items-start md:gap-6">
 				<div class="grow">
 					<input
 						type="url"
