@@ -128,13 +128,52 @@
 
 <div class="h-96 w-full">
 	<div class="center-content-container">
-		<div class="mx-6 h-40 -translate-y-1/2 bg-violet-800" />
+		<div
+			class="
+				mx-6
+				-translate-y-1/2
+				rounded-[10px]
+				bg-darkViolet
+				bg-[url('images/bg-shorten-mobile.svg')]
+				bg-cover
+				bg-[left_90px_top_-50px]
+				bg-no-repeat
+				p-6
+				md:bg-[url('images/bg-shorten-desktop.svg')]
+				md:bg-left-top
+				md:px-16
+				md:py-[52px]
+			"
+		>
+			<form class="flex flex-col items-stretch justify-center gap-4 md:flex-row md:gap-6">
+				<input
+					type="url"
+					name=""
+					id=""
+					class="
+						grow
+						rounded-[10px]
+						px-4
+						pb-[11px]
+						pt-3
+						text-base
+						leading-relaxed
+						tracking-[0.12px]
+						placeholder-veryDarkBlue/50
+						placeholder:font-medium
+						md:px-8
+						md:py-3.5
+						md:text-xl
+						md:tracking-[0.15px]
+					"
+					placeholder="Shorten a link here..."
+				/>
+				<button class="btn-secondary--md md:btn-secondary--xl md:grow-0">Shorten It!</button
+				>
+			</form>
+		</div>
 	</div>
 </div>
-
-<!-- Shorten a link here... -->
-
-<!-- Shorten It! -->
 
 <!-- Advanced Statistics -->
 
