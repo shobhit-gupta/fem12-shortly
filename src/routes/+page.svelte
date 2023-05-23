@@ -145,29 +145,39 @@
 				md:py-[52px]
 			"
 		>
-			<form class="flex flex-col items-stretch justify-center gap-4 md:flex-row md:gap-6">
-				<input
-					type="url"
-					name=""
-					id=""
-					class="
-						grow
-						rounded-[10px]
-						px-4
-						pb-[11px]
-						pt-3
-						text-base
-						leading-relaxed
-						tracking-[0.12px]
-						placeholder-veryDarkBlue/50
-						placeholder:font-medium
-						md:px-8
-						md:py-3.5
-						md:text-xl
-						md:tracking-[0.15px]
-					"
-					placeholder="Shorten a link here..."
-				/>
+			<form class="flex flex-col items-start justify-center gap-4 md:flex-row md:gap-6">
+				<div class="grow">
+					<input
+						type="url"
+						name=""
+						id=""
+						value="123"
+						class="
+							w-full
+							rounded-[10px]
+							px-4
+							pb-[11px]
+							pt-3
+							text-base
+							leading-relaxed
+							tracking-[0.12px]
+							placeholder-veryDarkBlue/50
+							placeholder:font-medium
+							invalid:border-[3px]
+							invalid:border-red
+							md:px-8
+							md:py-3.5
+							md:text-xl
+							md:tracking-[0.15px]
+						"
+						placeholder="Shorten a link here..."
+					/>
+					<p
+						class="mt-1 text-xs italic leading-[18px] tracking-[0.08px] text-red md:mt-2 md:text-base md:tracking-[0.11px]"
+					>
+						Please add a link
+					</p>
+				</div>
 				<button class="btn-secondary--md md:btn-secondary--xl md:grow-0">Shorten It!</button
 				>
 			</form>
