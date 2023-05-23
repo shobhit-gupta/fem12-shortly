@@ -135,12 +135,12 @@
 				-translate-y-1/2
 				rounded-[10px]
 				bg-darkViolet
-				bg-[url('images/bg-shorten-mobile.svg')]
+				bg-[url('/images/bg-shorten-mobile.svg')]
 				bg-cover
 				bg-[left_90px_top_-50px]
 				bg-no-repeat
 				p-6
-				md:bg-[url('images/bg-shorten-desktop.svg')]
+				md:bg-[url('/images/bg-shorten-desktop.svg')]
 				md:bg-left-top
 				md:px-16
 				md:py-[52px]
