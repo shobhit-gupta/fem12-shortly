@@ -126,11 +126,12 @@
 	</div>
 </div>
 
-<div class="h-96 w-full">
-	<div class="center-content-container">
+<div class="w-full pb-32">
+	<div class="center-content-container relative px-6">
 		<div
 			class="
-				mx-6
+				absolute
+				inset-x-6
 				-translate-y-1/2
 				rounded-[10px]
 				bg-darkViolet
@@ -151,7 +152,7 @@
 						type="url"
 						name=""
 						id=""
-						value="123"
+						value=""
 						class="
 							w-full
 							rounded-[10px]
@@ -173,15 +174,51 @@
 						placeholder="Shorten a link here..."
 					/>
 					<p
-						class="mt-1 text-xs italic leading-[18px] tracking-[0.08px] text-red md:mt-2 md:text-base md:tracking-[0.11px]"
+						class="mt-1 hidden text-xs italic leading-[18px] tracking-[0.08px] text-red md:mt-2 md:text-base md:tracking-[0.11px]"
 					>
 						Please add a link
 					</p>
 				</div>
-				<button class="btn-secondary--md md:btn-secondary--xl md:grow-0">Shorten It!</button
+				<button class="btn-secondary--md md:btn-secondary--xl w-full md:w-auto md:grow-0"
+					>Shorten It!</button
 				>
 			</form>
 		</div>
+		<ul class="flex flex-col gap-6 pt-28 md:gap-4">
+			<li
+				class="md:py- flex flex-col justify-between gap-2 divide-y-[1px] divide-grayishViolet/25 rounded-md bg-white md:flex-row md:items-center md:divide-y-0 md:py-4 md:pl-8 md:pr-6"
+			>
+				<p class="link p-4 text-veryDarkBlue md:p-0">https://www.frontendmentor.io</p>
+				<div
+					class="flex flex-col gap-[18px] p-4 md:m-0 md:flex-row md:items-center md:gap-6 md:p-0"
+				>
+					<p class="link text-cyan">https://rel.ink/k4lKyk</p>
+					<button class="btn-theme btn-sm md:btn-xs rounded-md">Copy</button>
+				</div>
+			</li>
+			<li
+				class="md:py- flex flex-col justify-between gap-2 divide-y-[1px] divide-grayishViolet/25 rounded-md bg-white md:flex-row md:items-center md:divide-y-0 md:py-4 md:pl-8 md:pr-6"
+			>
+				<p class="link p-4 text-veryDarkBlue md:p-0">https://www.frontendmentor.io</p>
+				<div
+					class="flex flex-col gap-[18px] p-4 md:m-0 md:flex-row md:items-center md:gap-6 md:p-0"
+				>
+					<p class="link text-cyan">https://rel.ink/k4lKyk</p>
+					<button class="btn-theme btn-sm md:btn-xs rounded-md">Copy</button>
+				</div>
+			</li>
+			<li
+				class="md:py- flex flex-col justify-between gap-2 divide-y-[1px] divide-grayishViolet/25 rounded-md bg-white md:flex-row md:items-center md:divide-y-0 md:py-4 md:pl-8 md:pr-6"
+			>
+				<p class="link p-4 text-veryDarkBlue md:p-0">https://www.frontendmentor.io</p>
+				<div
+					class="flex flex-col gap-[18px] p-4 md:m-0 md:flex-row md:items-center md:gap-6 md:p-0"
+				>
+					<p class="link text-cyan">https://rel.ink/k4lKyk</p>
+					<button class="btn-theme btn-sm md:btn-xs rounded-md">Copy</button>
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
 
@@ -227,3 +264,9 @@
 <!-- Our Team -->
 <!-- Careers -->
 <!-- Contact -->
+
+<style lang="postcss">
+	.link {
+		@apply text-base leading-none tracking-[0.12px] md:text-xl md:leading-[1.8em] md:tracking-[0.15px];
+	}
+</style>
