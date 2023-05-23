@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply full-width bg-slate-200 font-sans text-lg font-medium;
+		@apply full-width bg-whitesmoke font-sans text-lg font-medium;
 	}
 }
 
