@@ -169,6 +169,7 @@
 							md:px-8
 							md:py-3.5
 							md:text-xl
+							md:leading-[36px]
 							md:tracking-[0.15px]
 						"
 						placeholder="Shorten a link here..."
