@@ -1,12 +1,31 @@
 <script lang="ts">
 	import HamburgerButton from '$lib/UI/HamburgerButton.svelte';
 	import Navbar from '$lib/UI/Navbar.svelte';
+	import Features from '$lib/UI/Features.svelte';
 	import Boost from '$lib/UI/Boost.svelte';
 	import Footer from '$lib/UI/Footer.svelte';
 
 	let isMenuOpen = false;
 	let header: HTMLElement;
 	let scrollY: number;
+
+	const features: feature[] = [
+		{
+			icon: '/images/icon-brand-recognition.svg',
+			title: 'Brand Recognition',
+			text: 'Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.'
+		},
+		{
+			icon: '/images/icon-detailed-records.svg',
+			title: 'Detailed Records',
+			text: 'Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.'
+		},
+		{
+			icon: '/images/icon-fully-customizable.svg',
+			title: 'Fully Customizable',
+			text: 'Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.'
+		}
+	];
 
 	const toggleMenu = (event: CustomEvent<boolean>) => {
 		isMenuOpen = event.detail;
@@ -247,121 +266,11 @@
 	</section>
 </div>
 
-<div class="full-width">
-	<section class="center-content-container section">
-		<div class="mx-auto max-w-[540px] text-center">
-			<h2 class="section-title text-veryDarkBlue">Advanced Statistics</h2>
-			<p class="mt-4 text-grayishViolet md:mt-[18px]">
-				Track how your links are performing across the web with our advanced statistics
-				dashboard.
-			</p>
-		</div>
-		<div class="relative mt-24">
-			<div class="center-x center-y absolute z-0 h-3/4 w-2 md:h-2 md:w-3/4">
-				<div class="h-full w-full bg-cyan md:-translate-y-[22px]" />
-			</div>
-			<div
-				class="relative z-10 flex flex-col gap-24 md:flex-row md:items-center md:gap-4 lg:gap-8"
-			>
-				<div
-					class="relative rounded-md bg-white px-8 pb-10 pt-[77px] text-center md:self-start md:px-2 lg:px-8"
-				>
-					<h3
-						class="
-							feature-title
-							before:center-x
-							text-veryDarkBlue
-							before:absolute
-							before:top-0
-							before:h-[88px]
-							before:w-[88px]
-							before:-translate-y-1/2
-							before:rounded-full
-							before:bg-darkViolet
-							before:p-6
-							before:content-[url('/images/icon-brand-recognition.svg')]
-							before:md:left-8
-							before:md:translate-x-0
-						"
-					>
-						Brand Recognition
-					</h3>
-					<p class="mt-3 text-md text-grayishViolet">
-						Boost your brand recognition with each click. Generic links don’t mean a
-						thing. Branded links help instil confidence in your content.
-					</p>
-				</div>
-
-				<div
-					class="relative rounded-md bg-white px-8 pb-10 pt-[77px] text-center md:my-12 md:px-2 lg:px-8"
-				>
-					<h3
-						class="
-							feature-title
-							before:center-x
-							text-veryDarkBlue
-							before:absolute
-							before:top-0
-							before:h-[88px]
-							before:w-[88px]
-							before:-translate-y-1/2
-							before:rounded-full
-							before:bg-darkViolet
-							before:p-6
-							before:content-[url('/images/icon-detailed-records.svg')]
-							before:md:left-8
-							before:md:translate-x-0
-						"
-					>
-						Detailed Records
-					</h3>
-					<p class="mt-3 text-md text-grayishViolet">
-						Gain insights into who is clicking your links. Knowing when and where people
-						engage with your content helps inform better decisions.
-					</p>
-				</div>
-
-				<div
-					class="relative rounded-md bg-white px-8 pb-10 pt-[77px] text-center md:self-end md:px-2 lg:px-8"
-				>
-					<h3
-						class="
-							feature-title
-							before:center-x
-							text-veryDarkBlue
-							before:absolute
-							before:top-0
-							before:h-[88px]
-							before:w-[88px]
-							before:-translate-y-1/2
-							before:rounded-full
-							before:bg-darkViolet
-							before:p-6
-							before:content-[url('/images/icon-fully-customizable.svg')]
-							before:md:left-8
-							before:md:translate-x-0
-						"
-					>
-						Fully Customizable
-					</h3>
-					<p class="mt-3 text-md text-grayishViolet">
-						Improve brand awareness and content discoverability through customizable
-						links, supercharging audience engagement.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-
+<Features {features} />
 <Boost />
 <Footer />
 
 <style lang="postcss">
-	.feature-title {
-		@apply text-2xl font-bold leading-normal md:text-xl lg:text-2xl;
-	}
-
 	.link {
 		@apply text-base leading-none tracking-open md:text-xl md:leading-easy;
 	}
