@@ -3,3 +3,8 @@ type feature = {
 	title: string;
 	text: string;
 };
+
+type shortenedLink = {
+	original: string;
+	shortened: string;
+};
