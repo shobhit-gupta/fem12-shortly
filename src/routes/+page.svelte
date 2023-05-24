@@ -134,11 +134,10 @@
 					class="
 						mt-4
 						leading-relaxed
-						tracking-[0.12px]
+						tracking-open
 						text-grayishViolet
 						md:mt-1.5
-						md:text-[22px]
-						md:tracking-[0.15px]
+						md:text-2xl
 					"
 				>
 					Build your brand’s recognition and get detailed insights on how your links are
@@ -151,7 +150,7 @@
 </div>
 
 <div class="w-full">
-	<div class="center-content-container section relative">
+	<section class="center-content-container section relative">
 		<div
 			class="
 				absolute
@@ -185,7 +184,7 @@
 							pt-3
 							text-base
 							leading-relaxed
-							tracking-[0.12px]
+							tracking-open
 							placeholder-veryDarkBlue/50
 							placeholder:font-medium
 							invalid:border-[3px]
@@ -193,13 +192,12 @@
 							md:px-8
 							md:py-3.5
 							md:text-xl
-							md:leading-[36px]
-							md:tracking-[0.15px]
+							md:leading-easy
 						"
 						placeholder="Shorten a link here..."
 					/>
 					<p
-						class="mt-1 hidden text-xs italic leading-[18px] tracking-[0.08px] text-red md:mt-2 md:text-base md:tracking-[0.11px]"
+						class="mt-1 hidden text-xs italic leading-normal tracking-open text-red md:mt-2 md:text-base"
 					>
 						Please add a link
 					</p>
@@ -244,11 +242,11 @@
 				</div>
 			</li>
 		</ul>
-	</div>
+	</section>
 </div>
 
 <div class="full-width">
-	<div class="center-content-container section">
+	<section class="center-content-container section">
 		<div class="mx-auto max-w-[540px] text-center">
 			<h2 class="section-title text-veryDarkBlue">Advanced Statistics</h2>
 			<p class="mt-4 text-grayishViolet md:mt-[18px]">
@@ -286,7 +284,7 @@
 					>
 						Brand Recognition
 					</h3>
-					<p class="mt-3 text-[15px] leading-[26px] text-grayishViolet">
+					<p class="mt-3 text-md text-grayishViolet">
 						Boost your brand recognition with each click. Generic links don’t mean a
 						thing. Branded links help instil confidence in your content.
 					</p>
@@ -315,7 +313,7 @@
 					>
 						Detailed Records
 					</h3>
-					<p class="mt-3 text-[15px] leading-[26px] text-grayishViolet">
+					<p class="mt-3 text-md text-grayishViolet">
 						Gain insights into who is clicking your links. Knowing when and where people
 						engage with your content helps inform better decisions.
 					</p>
@@ -344,17 +342,17 @@
 					>
 						Fully Customizable
 					</h3>
-					<p class="mt-3 text-[15px] leading-[26px] text-grayishViolet">
+					<p class="mt-3 text-md text-grayishViolet">
 						Improve brand awareness and content discoverability through customizable
 						links, supercharging audience engagement.
 					</p>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </div>
 
-<div
+<section
 	class="
 		full-width
 		bg-darkViolet
@@ -371,7 +369,7 @@
 		<h3 class="section-title tracking-tight text-white">Boost your links today</h3>
 		<a href="/" class="btn-primary--lg mx-auto block max-w-fit">Get Started</a>
 	</div>
-</div>
+</section>
 
 <footer class="full-width bg-veryDarkViolet text-white">
 	<div class="center-content-container px-6 py-[72px]">
@@ -431,23 +429,23 @@
 	}
 
 	.section-title {
-		@apply text-[28px] font-bold leading-[48px] md:text-[40px];
+		@apply text-[28px] font-bold leading-11 md:text-[40px];
 	}
 
 	.feature-title {
-		@apply text-[22px] font-bold leading-normal md:text-xl lg:text-[22px];
+		@apply text-2xl font-bold leading-normal md:text-xl lg:text-2xl;
 	}
 
 	.link {
-		@apply text-base leading-none tracking-[0.12px] md:text-xl md:leading-[1.8em] md:tracking-[0.15px];
+		@apply text-base leading-none tracking-open md:text-xl md:leading-easy;
 	}
 
 	footer ul > h4 {
-		@apply text-base font-bold leading-normal tracking-[-0.25px];
+		@apply text-base font-bold leading-normal tracking-narrow;
 	}
 
 	footer li {
-		@apply text-[15px] leading-normal tracking-[-0.23px] text-gray;
+		@apply text-md leading-normal tracking-narrow text-gray;
 	}
 
 	footer li:first-of-type {
