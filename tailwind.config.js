@@ -21,6 +21,23 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Poppins', 'sans-serif']
+			},
+			letterSpacing: {
+				open: '0.0075em',
+				narrow: '-0.015625em'
+			},
+			lineHeight: {
+				11: '3rem',
+				easy: '1.8'
+			},
+			fontSize: {
+				md: [
+					'0.9375rem',
+					{
+						lineHeight: '1.8em'
+					}
+				],
+				'2xl': '1.375rem'
 			}
 		}
 	},

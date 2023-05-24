@@ -48,6 +48,12 @@
 	.btn-secondary--xl {
 		@apply btn-secondary btn-xl;
 	}
+	.section {
+		@apply px-6 pb-20 md:pb-32;
+	}
+	.section-title {
+		@apply text-[28px] font-bold leading-11 md:text-[40px];
+	}
 }
 
 @layer utilities {
@@ -56,11 +62,5 @@
 	}
 	.center-content-container {
 		@apply mx-auto w-full max-w-6xl;
-	}
-	.center-x {
-		@apply left-1/2 -translate-x-1/2;
-	}
-	.center-y {
-		@apply top-1/2 -translate-y-1/2;
 	}
 }
