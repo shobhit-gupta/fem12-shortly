@@ -11,16 +11,16 @@
 	<nav
 		transition:slide={{ duration: isMenuOpen ? 400 : 0 }}
 		class="
-        nav__divider
-        nav__body
-        nav__text
-        w-full
-        flex-col
-        md:flex
-        md:flex-row
-        md:items-center
-        md:justify-between
-    "
+			nav__divider
+			nav__body
+			nav__text
+			w-full
+			flex-col
+			md:flex
+			md:flex-row
+			md:items-center
+			md:justify-between
+    	"
 	>
 		<div class="flex flex-col gap-7 pb-7 md:flex-row md:pb-0">
 			<a href="/">Features</a>
